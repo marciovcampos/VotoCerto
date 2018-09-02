@@ -1,0 +1,26 @@
+<ion-header>
+        <ion-navbar>
+          <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+          <ion-title>Candidatos</ion-title>
+        </ion-navbar>
+      </ion-header>
+      
+      <ion-content padding>  
+          
+        <div text-center>
+          <h3>LISTA DE CANDIDATOS 2018</h3>
+        </div>
+        
+        <ion-list>
+          <ion-item *ngFor="let c of candidatos" (click)="getDescricao(c.id)">
+            <ion-thumbnail item-start>
+              <img src="{{c.foto}}">
+            </ion-thumbnail>
+            <h2>{{c.nome}}</h2>
+            <p>{{c.partido}}</p>              
+          </ion-item>          
+        </ion-list>  
+
+      </ion-content>
