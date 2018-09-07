@@ -7,10 +7,15 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>  
+<ion-content >  
   <div text-center>
-    <img src="assets/imgs/voto_certo.png"> 
+    <img src="assets/imgs/voto_certo_inicio.png"> 
   </div>
-  <div text-center><h3>Descubra o melhor canditado de acordo com suas preferências</h3></div>
-  <button ion-button full>Iniciar</button>
+  <div text-center><h4>Descubra o melhor canditado com base no que você concorda ou não.</h4></div>
+  <div text-center>
+  <button ion-button round large (click)="iniciar()">
+    <ion-icon name="play"></ion-icon>
+    &nbsp;Iniciar
+  </button>
+</div>
 </ion-content>

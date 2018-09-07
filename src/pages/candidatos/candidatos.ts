@@ -29,10 +29,6 @@ export class CandidatosPage {
 
   
   getDescricao(id){
-
-
-    console.log(id);
-    // this.navCtrl.push(CandidatosDescricaoPage, { 'id': id });
     this.navCtrl.push(CandidatosDescricaoPage, {id: id});
   }
   

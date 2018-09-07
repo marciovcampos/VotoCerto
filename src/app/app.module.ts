@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { SobrePage } from '../pages/sobre/sobre';
 import { CandidatosPage } from '../pages/candidatos/candidatos';
 import { CandidatosDescricaoPage } from '../pages/candidatosDescricao/candidatosDescricao';
+import { PerguntasPage } from '../pages/perguntas/perguntas';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -15,6 +16,7 @@ import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http'; 
 import { CandidatosProvider } from '../providers/candidatos/candidatos';
 import { CandidatosDescricaoProvider } from '../providers/candidatos-descricao/candidatos-descricao';
+import { PerguntasProvider } from '../providers/perguntas/perguntas';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { CandidatosDescricaoProvider } from '../providers/candidatos-descricao/c
     HomePage,
     CandidatosPage,
     SobrePage,
-    CandidatosDescricaoPage   
+    CandidatosDescricaoPage,
+    PerguntasPage   
   ],
   imports: [
     BrowserModule,
@@ -36,14 +39,16 @@ import { CandidatosDescricaoProvider } from '../providers/candidatos-descricao/c
     HomePage,
     SobrePage,
     CandidatosPage,
-    CandidatosDescricaoPage
+    CandidatosDescricaoPage,
+    PerguntasPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     CandidatosProvider,
-    CandidatosDescricaoProvider
+    CandidatosDescricaoProvider,
+    PerguntasProvider
   ]
 })
 export class AppModule {}

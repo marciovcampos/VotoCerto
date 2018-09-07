@@ -22,10 +22,10 @@ export class CandidatosDescricaoPage {
   getCandidato(idCandidato) {    
     this.candidatosDescricaoProvider.getCandidato(idCandidato)
     .then(data => {
-      this.candidatosDescricao = data;
-      console.log(this.candidatosDescricao);
+      this.candidatosDescricao = data;     
     });
   }
+
 
   
   
