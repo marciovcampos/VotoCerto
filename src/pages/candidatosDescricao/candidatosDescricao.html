@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Candidatos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>    
+  <ion-item *ngFor="let c of candidatosDescricao" (click)="getDescricao(c.id)">        
+    <ion-card>
+      <img src="{{c.foto}}"/>
+      <ion-card-content>
+        <h1>
+          {{c.nome}}
+        </h1>        
+        <h2>{{c.partido}} - {{c.numero}}</h2>        
+        <p text-wrap text-justify>
+          {{c.descricao}}
+        </p>
+      </ion-card-content>
+    </ion-card>    
+  </ion-item>      
+</ion-content>

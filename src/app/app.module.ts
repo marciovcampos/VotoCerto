@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SobrePage } from '../pages/sobre/sobre';
 import { CandidatosPage } from '../pages/candidatos/candidatos';
+import { CandidatosDescricaoPage } from '../pages/candidatosDescricao/candidatosDescricao';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -13,13 +14,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http'; 
 import { CandidatosProvider } from '../providers/candidatos/candidatos';
+import { CandidatosDescricaoProvider } from '../providers/candidatos-descricao/candidatos-descricao';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     CandidatosPage,
-    SobrePage   
+    SobrePage,
+    CandidatosDescricaoPage   
   ],
   imports: [
     BrowserModule,
@@ -32,13 +35,15 @@ import { CandidatosProvider } from '../providers/candidatos/candidatos';
     MyApp,
     HomePage,
     SobrePage,
-    CandidatosPage
+    CandidatosPage,
+    CandidatosDescricaoPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    CandidatosProvider
+    CandidatosProvider,
+    CandidatosDescricaoProvider
   ]
 })
 export class AppModule {}

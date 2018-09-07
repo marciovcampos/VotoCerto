@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { CandidatosProvider } from './../../providers/candidatos/candidatos';
+import { CandidatosDescricaoPage } from '../candidatosDescricao/candidatosDescricao';
 
 @Component({
   selector: 'page-candidatos',
@@ -9,6 +10,7 @@ import { CandidatosProvider } from './../../providers/candidatos/candidatos';
 export class CandidatosPage {
   
   candidatos: any;
+
   
   constructor(public navCtrl: NavController,  private candidatosProvider: CandidatosProvider) {
   }
@@ -24,7 +26,15 @@ export class CandidatosPage {
       console.log(this.candidatos);
     });
   }
+
   
+  getDescricao(id){
+
+
+    console.log(id);
+    // this.navCtrl.push(CandidatosDescricaoPage, { 'id': id });
+    this.navCtrl.push(CandidatosDescricaoPage, {id: id});
+  }
   
   
   
