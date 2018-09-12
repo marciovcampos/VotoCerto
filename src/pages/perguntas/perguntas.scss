@@ -1,3 +1,47 @@
 page-perguntas {
 
+    .contadorPerguntas{
+        text-align: right;
+        margin-right: 5%;
+    }
+
+    .temaGeral{
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: 10%;    
+        margin:5%;    
+        height: 50px;
+        color: white;
+        border-radius: 20px;
+        text-transform: uppercase;
+        text-align: center;  
+        font-size: 22px;
+        width: 90%;
+    }
+
+    .temaEconomia{
+        background-color: #5eb357;
+        background-image: url('/assets/imgs/icon_economia.png');  
+    }
+
+    .temaEnergia{
+        background-color: #58b3b3;
+        background-image: url('/assets/imgs/icon_energia.png');   
+    }
+
+    .temaSeguranca{
+        background-color: #6885e4;
+        background-image: url('/assets/imgs/icon_seguranca.png');   
+    }
+
+    .temaEducacao{
+        background-color: #e56c5e;
+        background-image: url('/assets/imgs/icon_educacao.png');   
+    }
+
+    .temaSocial{
+        background-color: #eca761;
+        background-image: url('/assets/imgs/icon_social.png'); 
+    }
+
 }

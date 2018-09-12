@@ -13,8 +13,8 @@
 <ion-content>
   <ion-slides #slides>
     <ion-slide *ngFor="let p of perguntas; let i = index;">
-      <div text-center>Pergunta {{i+1}} / {{perguntas.length}}</div>
-      <div text-center>{{p.tema}}</div>
+      <div class="contadorPerguntas">{{i+1}} / {{perguntas.length}}</div>
+      <button class="temaGeral tema{{p.temaResumido}}">{{p.tema}}</button>
       <ion-card>
         <ion-card-header>
           {{p.titulo}}
